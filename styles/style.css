@@ -1,0 +1,34 @@
+:root{
+    --blanco: #FCF6F5;
+    --black: #101820;
+    --azul: #2F3C7E;
+    --rosa: #FBEAEB;
+    --amarillo:#F9E795;
+    --gris: #757575;
+
+    --fuente_principal:'Krub', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--fuente_principal);
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span{
+    font-size: 2.3rem;
+}
+
