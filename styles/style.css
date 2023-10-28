@@ -1,7 +1,9 @@
 :root{
-    --blanco: #FCF6F5;
-    --black: #101820;
+    --background-color: #ecf0f3;
+    --negro: #273a4d;
     --azul: #2F3C7E;
+    --azul-claro: #8592D2;
+    --azul-oscuro: #181F40;
     --rosa: #FBEAEB;
     --amarillo:#F9E795;
     --gris: #757575;
@@ -21,6 +23,9 @@ html {
 body{
     font-size: 16px;
     font-family: var(--fuente_principal);
+    letter-spacing: .1rem;
+    background-color: var(--background-color);
+    color: var(--negro);
 }
 
 .titulo{
@@ -30,5 +35,61 @@ body{
 
 .titulo span{
     font-size: 2.3rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* ***********HERO****************** */
+.hero{
+    background-image: url('../img/uiDesign.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ************NAVEGACION********** */
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 14px 14px 20px #cbced1,
+              -14px -14px 20px #fff;
+}
+
+@media (min-width: 480px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+.navegacion-principal a{
+    cursor: pointer;
+    background-color: var(--background-color);
+    border: 2px solid var(--background-color);
+    border-radius: .7rem;
+    color: #fff;
+    display: block;
+    font-size: 1.7rem;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--gris);
+    text-transform: uppercase;
+    width: 50%;
+    font-weight: 700;
+    box-shadow: 6px 6px 6px #cbced1,
+                -6px -6px 6px #fff;
+    transition: 0.5s;
+}
+
+.navegacion-principal a:hover{
+    color: var(--background-color);
+    border-radius: 3.3rem;
+    background-color: var(--azul-claro);
 }
 
