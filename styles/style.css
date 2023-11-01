@@ -133,34 +133,55 @@ h1, h2, h3{
 }
 
 .navegacion-principal a:hover,
-.boton:hover{
+.boton:hover,
+.servicio i:hover{
     color: var(--background-color);
     border-radius: 3.3rem;
     background-color: var(--azul-claro);
+    border: none;
 }
 
 /* ********SERVICIOS****** */
-.servicio{
 
+.contenedor h2{
+    font-size: 5rem;
+    font-weight: normal;
+    border-bottom: 1px solid var(--gris);
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .servicio h3{
+    color: var(--gris);
+    font-size: 2.5rem;
+    font-weight: normal;
+}
 
+.servicio p{
+    line-height: 2;
+    text-align: center;
 }
 
 .servicio i{
     height: 11rem;
     width: 11rem;
     padding: 2rem;
-    background-color: var(--azul-claro);
     border-radius: 50%;
     box-shadow: var(--sombra);
     cursor: pointer;
     background-color: var(--background-color);
     border: 2px solid var(--background-color);
+    color: var(--gris);
     text-align: center;
     line-height: 7rem;
     font-size: 3.5rem;
+}
+
+.servicio i:hover{
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
