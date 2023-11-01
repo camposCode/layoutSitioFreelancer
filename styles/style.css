@@ -46,12 +46,14 @@ h1, h2, h3{
 
 .contenedor{
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 0 auto 19rem auto;
     box-shadow: var(--sombra);
     background-color: #eee;
     padding: 2rem;
     border-radius: 3rem;
 }
+
+
 
 /* ***********HERO****************** */
 .hero{
@@ -189,6 +191,31 @@ h1, h2, h3{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 5rem;
+    }
+}
+
+/* *********FOOTER****** */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+    box-shadow: 14px 14px 20px #cbced1,
+              -14px -14px 20px #fff;
+    background-color: var(--background-color);
+}
+footer .fa-heart{
+    color: red;
+    animation: heart .9s infinite;
+}
+@keyframes heart {
+    from{
+        font-size: 1.3rem;
+    }
+
+    to{
+        font-size: 2rem;
     }
 }
 
