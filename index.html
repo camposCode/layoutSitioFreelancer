@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Sitio Freelancer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" href="styles/normalize.css" as="style">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,6 @@
         <a href="#">servicios</a>
         <a href="#">contacto</a>
     </nav>
-
 
     <section class="hero">
         <div class="contenido-hero">
@@ -49,58 +49,38 @@
     </section>
 
 
-    <main>
+    <main class="contenedor">
         <h2>Mis Servicios</h2>
 
-        <section>
-            <h3>Desarrollo Web</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="40" height="40"
-                viewBox="0 0 24 24" stroke-width="2" stroke="#101820" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
-                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-            </svg>
-            <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
-                Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a orci
-                vel, congue efficitur mi. Phasellus ornare quam purus, sed rutrum orci commodo in.</p>
-        </section>
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Desarrollo Web</h3>
+                <i class="fa-solid fa-laptop"></i>
+                <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
+                    Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a
+                    orci
+                    vel, congue efficitur mi. Phasellus ornare quam purus, sed rutrum orci commodo in.</p>
+            </section>
 
-        <section>
-            <h3>Diseño UI</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-icons" width="40" height="40"
-                viewBox="0 0 24 24" stroke-width="2" stroke="#101820" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M6.5 6.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0" />
-                <path d="M2.5 21h8l-4 -7z" />
-                <path d="M14 3l7 7" />
-                <path d="M14 10l7 -7" />
-                <path d="M14 14h7v7h-7z" />
-            </svg>
-            <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
-                Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a orci
-                vel, congue efficitur mi. Phasellus ornare quam purus, sed rutrum orci commodo in.</p>
-        </section>
+            <section class="servicio">
+                <h3>Diseño UI</h3>
+                <i class="fa-solid fa-palette"></i>
+                <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
+                    Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a
+                    orci
+                    vel, congue efficitur mi. Phasellus ornare quam purus, sed rutrum orci commodo in.</p>
+            </section>
 
-        <section>
-            <h3>E-Commerce</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="20"
-                height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#101820" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
-                <path d="M3 10l18 0" />
-                <path d="M7 15l.01 0" />
-                <path d="M11 15l2 0" />
-            </svg>
-            <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
-                Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a orci
-                vel, congue efficitur mi. Phasellus ornare quam purus, sed rutrum orci commodo in.</p>
-        </section>
+            <section class="servicio">
+                <h3>E-Commerce</h3>
+                <i class="fa-solid fa-credit-card"></i>
+                <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
+                    Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a
+                    orci
+                    vel, congue efficitur mi. Phasellus ornare quam purus, sed rutrum orci commodo in.</p>
+            </section>
+        </div>
+
     </main>
 
     <section>
