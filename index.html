@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Sitio Freelancer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" href="styles/normalize.css" as="style">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +57,7 @@
         <div class="servicios">
             <section class="servicio">
                 <h3>Desarrollo Web</h3>
-                <i class="fa-solid fa-laptop"></i>
+                <img src="img/web.avif" alt="foto web">
                 <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
                     Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a
                     orci
@@ -64,7 +66,7 @@
 
             <section class="servicio">
                 <h3>Diseño UI</h3>
-                <i class="fa-solid fa-palette"></i>
+                <img src="img/ui.avif" alt="foto ui">
                 <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
                     Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a
                     orci
@@ -73,7 +75,7 @@
 
             <section class="servicio">
                 <h3>E-Commerce</h3>
-                <i class="fa-solid fa-credit-card"></i>
+                <img src="img/ecommerce.avif" alt="foto ecommerce">
                 <p>Duis quis sem nec erat venenatis cursus quis ac metus. Maecenas non fermentum risus, et mollis velit.
                     Aenean dapibus dictum libero, sit amet cursus augue iaculis eget. Morbi purus lectus, vestibulum a
                     orci
@@ -84,32 +86,35 @@
         <section>
             <h2>Contacto</h2>
 
-            <form action="">
+            <form class="formulario">
                 <fieldset>
                     <legend>Contáctame</legend>
 
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text" placeholder="Nombre">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="">Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Email</label>
+                            <input class="input-text" type="email" placeholder="Email">
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
                     </div>
 
                     <div>
-                        <label for="">Teléfono</label>
-                        <input type="tel" placeholder="Teléfono">
-                    </div>
-
-                    <div>
-                        <label for="">Email</label>
-                        <input type="email" placeholder="Email">
-                    </div>
-
-                    <div>
-                        <label for="">Mensaje</label>
-                        <textarea name="" id=""></textarea>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar">
+                        <input 
+                            class="input-text boton" type="submit" value="Enviar">
                     </div>
 
                 </fieldset>
@@ -121,7 +126,7 @@
         <p>Created with <i class="fa-solid fa-heart"></i> by José A. Campos</p>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
